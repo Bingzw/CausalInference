@@ -11,9 +11,7 @@
 
 ## Introduction
 This is the repo for training counterfactual causal inference models for detecting the root causes
-of diagnosed campaigns from today's insights. It supports the ad-hoc/scheduled (planning in future) 
-analysis of root cause detection. The job takes the input of the diagnosed campaigns and derives the optimal 
-root causes for each diagnosed problem. The output root causes are coded in the form of 
+of the given variable. 
 
 <p align="center">
 $f(\theta) < \mu$
@@ -45,7 +43,6 @@ Run customized causal inference job (Jupyter Notebook)
 ## References
 - [Hernán MA, Robins JM (2020). Causal Inference: What If. Boca Raton: Chapman & Hall/CRC](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/)
 - [Pearl, J., 2009. Causal inference in statistics: An overview](https://projecteuclid.org/journals/statistics-surveys/volume-3/issue-none/Causal-inference-in-statistics-An-overview/10.1214/09-SS057.pdf)
-- [VAM Playbook Recommnedations By Causal Inference](https://docs.google.com/document/d/1psQWtxGtY9yp6CjvuZZgy30aFfNilJEogcoTeoYFWeI/edit)
 
 ## Appendix
 ### Causal Inference Approaches in the repo
