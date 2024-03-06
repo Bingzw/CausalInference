@@ -28,34 +28,7 @@ $p(\eta)$ and $q(\zeta)$ are the constraints on the root cause, $\alpha$ and $\b
 In specific, the job will first conduct causal inference to estimate the average treatment effect (ATE) of each hypothesis, then searching 
 for the optimal hypothesis that satisfies the constraints. 
 
-When rules are derived from the causal models, they will be implemented in the daily batch job to generate the 
-[playbook results](https://docs.google.com/document/d/1S9YxitCwaAMpRyHBBNzmvh_tabs1YAY8d0zmCiatWKo/edit#bookmark=kix.q3y6526tfhpr), 
-indicating the actions that are needed to deal with the diagnosed problems. Detailed architecture design can be found 
-[here](https://docs.google.com/document/d/1psQWtxGtY9yp6CjvuZZgy30aFfNilJEogcoTeoYFWeI/edit?usp=sharing)
-
-## Installation
-- Prerequisites 
-  - Docker: Required, refer here to install Docker based upon one's system. 
-  - Conda: Optional, refer to Development Setup below for setting up local dev environment. 
-  - PyKrylov & Krylovctl: Follow this [link](https://pages.github.corp.ebay.com/taichi/doc-center/sdk/pykrylov/) for installing pykrylov
-    1. First time installation 
-    ```
-    python3 -m venv .env
-    source .env/bin/activate
-    pip install --upgrade pip
-    pip install git+ssh://git@github.corp.ebay.com/krylov/pykrylov@latest
-    ```
-    2. Go to the code directory, run_training_pipeline.sh  
-- Docker image(only for reference, no need to build)
-  - Docker image for the project: [here](https://ecr.vip.ebayc3.com/repository/krylov_curated_workspace/base) 
-  - No need to build the Docker image as long as all prerequisites are satisfied.
-
 ## Quick Start
-To execute the test runs, run the following commands
-```
-bash run_training_pipeline.sh
-```
-
 Run customized causal inference job (Jupyter Notebook)
 ```
 >>> from core.causality import CausalModel
