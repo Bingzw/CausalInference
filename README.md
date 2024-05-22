@@ -1,4 +1,4 @@
-# Today Insights Playbook - Root Cause Detection Through Causal Inference 
+# Root Cause Detection Through Causal Inference 
 
 ## Table of Contents
 1. [Introduction](#introduction)
